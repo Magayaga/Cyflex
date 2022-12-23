@@ -1,0 +1,615 @@
+/*
+  
+   Cyflex (Beta) | Copyright 2022
+   License: MIT License
+   Author/Developer: Cyril John Magayaga
+
+   First Release Date: September 30, 2022
+
+*/
+@charset "UTF-8";
+/*
+   Copyright <2022> <Cyril John Magayaga>
+
+   Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+   The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --cyflex-brown: #aa4414;
+    --cyflex-red: #d32121;
+    --cyflex-orange: #d87b12;
+    --cyflex-yellow: #ddc330;
+    --cyflex-bright-yellow: #fda921;
+    --cyflex-gold: #a38c05;
+    --cyflex-green: #158f56;
+    --cyflex-teal: #16c28e;
+    --cyflex-cyan: #00d5ff;
+    --cyflex-aqua: #0bfcfc;
+    --cyflex-azure: #0884ff;
+    --cyflex-blue: #0362f0;
+    --cyflex-indigo: #7a28ff;
+    --cyflex-purple: #5d12be;
+    --cyflex-pink: #c114d1;
+    --cyflex-black: #000000;
+    --cyflex-white: #ffffff;
+    --cyflex-light-gray: #e2e2e2;
+    --cyflex-gray: #818181;
+    --cyflex-sand: #f8efdf;
+    --cyflex-champagne: #f7e7ce;
+    --cyflex-blanched-almond: #f7e3c7;
+    --cyflex-dark: #1d2022;
+    --cyflex-color: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    --cyflex-sans-serif: "Inter", "Inter Tight", "Work Sans", "IBM Plex Sans";
+    --cyflex-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", "IBM Plex Mono", "Jetbrains Mono", monospace;
+    --cyflex-serif: Roboto Slab, "Roboto Slab", "Playfair Display", "Merriweather", "EB Garamond", "IBM Plex Serif", serif;
+    --cyflex-bd-font-family: var(--cyflex-sans-serif);
+    --cyflex-bd-font-size: 0.95rem;
+    --cyflex-bd-font-weight: 395;
+    --cyflex-bd-line-height: 1.45;
+    --cyflex-bd-color: #212529;
+    --cyflex-bd-bg: #fff;
+    --cyflex-brd-width: 1px;
+    --cyflex-brd-style: solid;
+    --cyflex-brd-color: #e6e6e6;
+    --cyflex-brd-color-translucent: #0000011d;
+    --cyflex-brd-radius: 0.3745rem;
+    --cyflex-brd-radius-sm: 0.24rem;
+    --cyflex-brd-radius-lg: 0.45rem;
+    --cyflex-brd-radius-xl: 1rem;
+    --cyflex-brd-radius-2xl: 2rem;
+    --cyflex-brd-radius-pill: 50rem;
+    --cyflex-link-color: ##0362f0;
+    --cyflex-link-hover-color: ##0362f0;
+    --cyflex-code-color: #c114d1;
+    --cyflex-hl-bg: #f7e7ce;
+    --cyflex-card-spacer-y: 1rem;
+    --cyflex-card-spacer-x: 1rem;
+    --cyflex-card-title-spacer-y: 0.5rem;
+    --cyflex-card-border-width: 1px;
+    --cyflex-card-border-color: var(--cyflex-brd-color-translucent);
+    --cyflex-card-border-radius: 0.375rem;
+    --cyflex-card-box-shadow: ;
+    --cyflex-card-inner-border-radius: calc(0.375rem - 1px);
+    --cyflex-card-cap-padding-y: 0.5rem;
+    --cyflex-card-cap-padding-x: 1rem;
+    --cyflex-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --cyflex-card-cap-color: ;
+    --cyflex-card-height: ;
+    --cyflex-card-color: ;
+    --cyflex-card-bg: #fff;
+    --cyflex-card-img-overlay-padding: 1rem;
+    --cyflex-card-group-margin: 0.75rem;
+    --cyflex-navbar-padding-x: 0;
+    --cyflex-navbar-padding-y: 0.5rem;
+    --cyflex-navbar-color: #0000008c;
+    --cyflex-navbar-hover-color: #000000b3;
+    --cyflex-navbar-disabled-color: #0000004d;
+    --cyflex-navbar-active-color: #000000e6;
+    --cyflex-navbar-brand-padding-y: 0.3125rem;
+    --cyflex-navbar-brand-margin-end: 1rem;
+    --cyflex-navbar-brand-font-size: 1.15rem;
+    --cyflex-navbar-brand-color: #000000e6;
+    --cyflex-navbar-brand-hover-color: #000000e6;
+    --cyflex-navbar-nav-link-padding-x: 0.5rem;
+    --cyflex-navbar-toggler-padding-y: 0.25rem;
+    --cyflex-navbar-toggler-padding-x: 0.75rem;
+    --cyflex-navbar-toggler-font-size: 1.25rem;
+    --cyflex-navbar-toggler-border-color: #0000001a;
+    --cyflex-navbar-toggler-border-radius: 0.375rem;
+    --cyflex-navbar-toggler-focus-width: 0.25rem;
+    --cyflex-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    --cyflex-nav-link-padding-x: 0;
+    --cyflex-nav-link-padding-y: 0.5rem;
+    --cyflex-nav-link-font-weight: ;
+    --cyflex-nav-link-color: var(--cyflex-navbar-color);
+    --cyflex-nav-link-hover-color: var(--cyflex-navbar-hover-color);
+    --cyflex-nav-link-disabled-color: var(--cyflex-navbar-disabled-color);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: var(--cyflex-bd-font-family);
+   font-size: var(--cyflex-bd-font-size);
+   font-weight: var(--cyflex-bd-font-weight);
+   line-height: var(--cyflex-bd-line-height);
+   color: var(--cyflex-bd-color);
+   text-align: var(--cyflex-bd-text-align);
+   background-color: var(--cyflex-bd-bg);
+   -webkit-text-size-adjust: 100%;
+   -webkit-tap-highlight-color: #000;
+}
+
+h1, .h1 {
+   font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+   h1, .h1 {
+     font-size: 2.5rem;
+   }
+}
+
+h2, .h2 {
+   font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+   h2, .h2 {
+      font-size: 2rem;
+   }
+}
+ 
+h3, .h3 {
+   font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+   h3, .h3 {
+      font-size: 1.75rem;
+   }
+}
+ 
+h4, .h4 {
+   font-size: calc(1.275rem + 0.3vw);
+}
+ 
+@media (min-width: 1200px) {
+   h4, .h4 {
+      font-size: 1.5rem;
+   }
+}
+ 
+h5, .h5 {
+   font-size: 1.25rem;
+}
+
+h6, .h6 {
+   font-size: 1rem;
+}
+ 
+p {
+   margin-top: 0;
+   margin-bottom: 1rem;
+}
+
+mark, .mark {
+   padding: 0.1875em;
+   border-radius: 5px;
+   color: var(--cyflex-white);
+   background-color: var(--cyflex-yellow);
+}
+
+small, .small {
+   font-size: 0.875em;
+}
+
+button, .button {
+   margin-bottom: 1.5%;
+   margin-top: 1.5%;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   text-transform: none;
+   color: var(--cyflex-dark);
+   border: 1px solid transparent;
+   border-radius: 0.25rem;
+   cursor: pointer;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center;
+   transition: .10s ease-in-out, background-color .10s ease-in-out, border-color .10s ease-in-out, box-shadow .10s ease-in-out;
+}
+
+a {
+   margin-bottom: inherit;
+   margin-top: inherit;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   text-transform: none;
+   color: inherit;
+   border: 1px solid transparent;
+   border-radius: 0.25rem;
+   cursor: pointer;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center;
+}
+
+.textbox {
+   margin-bottom: 1.5%;
+   margin-top: 1.5%;
+   font-family: inherit;
+   font-size: inherit;
+   line-height: inherit;
+   text-transform: none;
+   color: inherit;
+   border: 1px solid transparent;
+   border-radius: 0.25rem;
+   cursor: pointer;
+   vertical-align: left;
+   text-align: left;
+
+}
+
+.button:focus:not(:focus-visible) {
+   outline: 0;
+}
+
+.button-primary, .primary {
+   color: var(--cyflex-white);
+   background-color: var(--cyflex-blue);
+   border-color: var(--cyflex-blue);
+}
+
+.button-secondary, .secondary {
+   color: var(--cyflex-white);
+   background-color: var(--cyflex-gray);
+   border-color: var(--cyflex-gray);
+}
+
+.button-tertiary, .tertiary {
+   color: var(--cyflex-dark);
+   background-color: var(--cyflex-blanched-almond);
+   border-color: var(--cyflex-blanched-almond);
+}
+
+.button-success, .success {
+   color: var(--cyflex-white);
+   background-color: var(--cyflex-green);
+   border-color: var(--cyflex-green);
+}
+
+.button-danger, .danger, .fail {
+   color: var(--cyflex-white);
+   background-color: var(--cyflex-red);
+   border-color: var(--cyflex-red);
+}
+
+.button-warning, .warning {
+   color: var(--cyflex-dark);
+   background-color: var(--cyflex-bright-yellow);
+   border-color: var(--cyflex-bright-yellow);
+}
+
+.button-info, .info {
+   color: var(--cyflex-dark);
+   background-color: var(--cyflex-cyan);
+   border-color: var(--cyflex-cyan);
+}
+
+.button-light, .light {
+   color: var(--cyflex-dark);
+   background-color: var(--cyflex-light-gray);
+   border-color: var(--cyflex-light-gray);
+}
+
+.button-dark, .dark {
+   color: var(--cyflex-white);
+   background-color: var(--cyflex-dark);
+   border-color: var(--cyflex-dark);
+}
+
+.button-color, .color {
+   color: var(--cyflex-white);
+   background-image: var(--cyflex-color);
+   border-color: var(--cyflex-color);
+}
+
+.button-group {
+   position: relative;
+   display: inline-flex;
+   vertical-align: middle;
+}
+
+.button-right {
+   border-top-left-radius: 0%;
+   border-bottom-left-radius: 0%;
+}
+
+.button-middle {
+   border-radius: 0%;
+}
+
+.button-left {
+   border-top-right-radius: 0%;
+   border-bottom-right-radius: 0%;
+}
+
+.textbox {
+   font-size: 11.75;
+   padding-right: 10px;
+   border: 0.5px solid var(--cyflex-black);
+}
+
+.card-body {
+   flex: 1 1 auto;
+   padding: var(--cyflex-card-spacer-y) var(--cyflex-card-spacer-x);
+   color: var(--cyflex-card-color);
+}
+
+.card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   min-width: 0;
+   height: var(--cyflex-card-height);
+   word-wrap: break-word;
+   background-color: var(--cylfex-card-bg);
+   background-clip: border-box;
+   border: var(--cyflex-card-border-width) solid var(--cyflex-card-border-color);
+   border-radius: var(--cyflex-card-border-radius);
+}
+
+.form-check {
+   display: block;
+   min-height: 1.5rem;
+   padding-left: 1.5em;
+   margin-bottom: 0.125rem;
+}
+
+.form-check-input:checked[type=checkbox] {
+   background-image: url();
+}
+
+.form-check-input[type=radio] {
+   border-radius: 50%;
+}
+
+.text-right {
+   text-align: right;
+} 
+
+.text-center {
+   text-align: center;
+}
+
+.text-justify {
+   text-align: justify;
+}
+
+.spin {
+   animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+   0% {
+       transform: rotate(0deg);
+   }
+   100% {
+       transform: rotate(359deg);
+   }
+}
+
+.animate-fading {
+   animation: fading 10s infinite;
+}
+
+@keyframes fading {
+   0% {
+       opacity: 0;
+   }
+   50% {
+       opacity: 1;
+   }
+   100% {
+       opacity: 0;
+   }
+}
+
+.animate-opacity {
+   animation: opac 0.8s;
+}
+
+@keyframes opac {
+   from {
+       opacity: 0;
+   }
+   to {
+       opacity: 1;
+   }
+}
+
+.animate-top {
+   position: relative;
+   animation: animatetop 0.4s;
+}
+
+@keyframes animatetop {
+   from {
+       top: -300px;
+       opacity: 0;
+   }
+   to {
+       top: 0;
+       opacity: 1;
+   }
+}
+
+.animate-left {
+   position: relative;
+   animation: animateleft 0.4s;
+}
+
+@keyframes animateleft {
+   from {
+       left: -300px;
+       opacity: 0;
+   }
+   to {
+       left: 0;
+       opacity: 1;
+   }
+}
+
+.animate-right {
+   position: relative;
+   animation: animateright 0.4s;
+}
+
+@keyframes animateright {
+   from {
+       right: -300px;
+       opacity: 0;
+   }
+   to {
+       right: 0;
+       opacity: 1;
+   }
+}
+
+.animate-bottom {
+   position: relative;
+   animation: animatebottom 0.4s;
+}
+
+@keyframes animatebottom {
+   from {
+       bottom: -300px;
+       opacity: 0;
+   }
+   to {
+       bottom: 0;
+       opacity: 1;
+   }
+}
+
+.animate-zoom {
+   animation: animatezoom 0.6s;
+}
+
+@keyframes animatezoom {
+   from {
+       transform: scale(0);
+   }
+   to {
+       transform: scale(1);
+   }
+}
+
+.animate-input {
+   transition: width 0.4s ease-in-out;
+}
+
+.animate-input:focus {
+   width: 100% !important;
+}
+
+.logo-text {
+   letter-spacing: .1em;
+   font-weight: 900;
+   position: absolute;
+   right: 0;
+   font-size: 24px;
+   width: auto;
+   z-index: 10;
+   margin-top: 6rem;
+   text-align: right;
+   display: inline-block;
+   transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+}
+
+.logo-text-none {
+   display: none !important;
+}
+
+.logo-text-inline-block {
+   display: inline-block !important;
+}
+
+.navbar {
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   padding: var(--cyflex-navbar-padding-y) var(--cyflex-navbar-padding-x);
+}
+
+.navbar-brand {
+   padding-top: var(--cyflex-navbar-brand-padding-y);
+   padding-bottom: var(--cyflex-navbar-brand-padding-y);
+   margin-right: var(--cyflex-navbar-brand-margin-end);
+   font-size: var(--cyflex-navbar-brand-font-size);
+   color: var(--cyflex-navbar-brand-color) inherit;
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+.navbar-collapse {
+   flex-basis: 100%;
+   flex-grow: 1;
+   align-items: center;
+}
+
+.navbar-nav {
+   display: flex;
+   flex-direction: row;
+   padding-left: 0;
+   margin-bottom: 0;
+   list-style: none;
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+   display: flex;
+   flex-wrap: inherit;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.nav-link {
+   display: block;
+   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+   font-size: var(--bs-nav-link-font-size);
+   font-weight: var(--bs-nav-link-font-weight);
+   color: var(--bs-nav-link-color);
+   text-decoration: none;
+   margin-right: 3%;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.active, .navbar-nav .show >.nav-link {
+   color: var(--cyflex-navbar-active-color) inherit;
+   font-size: medium;
+   font-weight: bold;
+}
+
+.disabled {
+   color: var(--cyflex-nav-link-disabled-color);
+   pointer-events: none;
+   cursor: default;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+   --cyflex-gutter-x: 1.5rem;
+   --cyflex-gutter-y: 0;
+   width: 100%;
+   padding-right: calc(var(--cyflex-gutter-x) * .5);
+   padding-left: calc(var(--cyflex-gutter-x) * .5);
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.navbar-expand-lg .navbar-collapse {
+      display: flex!important;
+      flex-basis: auto;
+}
+
+.collapse:not(.show) {
+   display: none;
+}
