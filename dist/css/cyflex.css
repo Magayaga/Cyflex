@@ -1,11 +1,11 @@
 /*
   
-   Cyflex v1.0.3 (Beta) | Copyright 2022
+   Cyflex v1.0.4 (Beta) | Copyright 2022
    License: MIT License
    Author/Developer: Cyril John Magayaga
 
    First Release Date: September 30, 2022
-   Latest Release Date: January 1, 2023
+   Latest Release Date: January 31, 2023
 
 */
 @charset "UTF-8";
@@ -186,6 +186,42 @@ h5, .h5 {
 
 h6, .h6 {
    font-size: 1rem;
+}
+
+.display-1 {
+   font-size: calc(2.25rem + 4.55vw);
+   font-weight: 300;
+   line-height: 1.2;
+}
+
+.display-2 {
+   font-size: calc(1.75rem + 3.95vw);
+   font-weight: 300;
+   line-height: 1.2;
+}
+
+.display-3 {
+   font-size: calc(1.55rem + 3.35vw);
+   font-weight: 300;
+   line-height: 1.2;
+}
+
+.display-4 {
+   font-size: calc(1.485rem + 2.75vw);
+   font-weight: 300;
+   line-height: 1.2;
+}
+
+.display-5 {
+   font-size: calc(1.435rem + 2.25vw);
+   font-weight: 300;
+   line-height: 1.2;
+}
+
+.display-6 {
+   font-size: calc(1.385rem + 1.55vw);
+   font-weight: 300;
+   line-height: 1.2;
 }
  
 p {
