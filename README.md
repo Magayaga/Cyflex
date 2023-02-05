@@ -13,7 +13,7 @@
 ## Quick start
 Several quick start options are available:
 
-* Latest CDN: `https://magayaga.pages.dev/cdn/cyflex/@1.0.3/cyflex.css`
+* Latest CDN: `https://magayaga.pages.dev/cdn/cyflex/@1.0.4/cyflex.css`
 * Original CDN: `https://magayaga.pages.dev/cdn/cyflex/@1.0.0/cyflex.css`
 * Clone the repo: `git clone https://github.com/magayaga/Cyflex.git`
 
