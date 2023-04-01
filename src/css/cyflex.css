@@ -22,8 +22,12 @@
 @import url('fonts/roboto-mono/font.cyflex.css');
 @import url('fonts/rubik-bubbles/font.cyflex.css');
 @import url('fonts/nabla/font.cyflex.css');
-/* Online fonts */
+@import url('fonts/google-sans-display/font.cyflex.css');
+@import url('fonts/google-sans/font.cyflex.css');
 @import url('fonts/poppins/font.cyflex.css');
+@import url('fonts/android-euclid/font.cyflex.css');
+@import url('fonts/sf-pro/display/font.cyflex.css');
+@import url('fonts/sf-pro/text/font.cyflex.css');
 
 :root {
     --cyflex-brown: #aa4414;
@@ -52,8 +56,8 @@
     --cyflex-dark: #1d2022;
     --cyflex-body-dark: #0000001d;
     --cyflex-color: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
-    --cyflex-sans-serif: "Inter", "Inter Tight", "Work Sans", "IBM Plex Sans", sans-serif;
-    --cyflex-monospace: "IBM Plex Mono", "Roboto Mono", "Jetbrains Mono", Source, monospace;
+    --cyflex-sans-serif: "Inter", "Inter Tight", "Work Sans", "IBM Plex Sans", "Google Sans", "SF Pro Display", sans-serif;
+    --cyflex-monospace: "IBM Plex Mono", "Roboto Mono", "Jetbrains Mono", "SF Pro Text", Source, monospace;
     --cyflex-serif: Roboto Slab, "Roboto Slab", "Playfair Display", "Merriweather", "EB Garamond", "IBM Plex Serif", serif;
     --cyflex-bd-font-family: var(--cyflex-sans-serif);
     --cyflex-bd-mono-font-family: var(--cyflex-monospace);

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Android Euclid';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(v2/AndroidEuclid-Bold-WebS.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Android Euclid';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(v2/AndroidEuclid-Medium-WebS.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Android Euclid';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(v2/AndroidEuclid-Regular-WebS.woff2) format('woff2');
+}

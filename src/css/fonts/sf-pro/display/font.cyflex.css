@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(v3/sf-pro-display_regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(v3/sf-pro-display_semibold.woff2) format('woff2');
+}
