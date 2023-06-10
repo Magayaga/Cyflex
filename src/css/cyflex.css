@@ -1,11 +1,11 @@
 /*
   
-   Cyflex v1.0.6 (Beta) | Copyright 2022
+   Cyflex v1.0.7 (Beta) | Copyright 2022
    License: MIT License
    Author/Developer: Cyril John Magayaga
 
    First Release Date: September 30, 2022
-   Latest Release Date: April 1, 2023
+   Latest Release Date: June 10, 2023
 
 */
 @charset "UTF-8";
@@ -28,6 +28,7 @@
 @import url('fonts/android-euclid/font.cyflex.css');
 @import url('fonts/sf-pro/display/font.cyflex.css');
 @import url('fonts/sf-pro/text/font.cyflex.css');
+@import url('fonts/roc-grotesk/font.cyflex.css');
 
 :root {
     --cyflex-brown: #aa4414;
@@ -3098,4 +3099,118 @@ pre {
 .place-self-stretch {
    place-self: stretch;
 }
+
+.bg-black {
+   background-color: var(--cyflex-black);
+}
+
+.bg-white {
+   background-color: var(--cyflex-white);
+}
+
+.bg-blue {
+   background-color: var(--cyflex-blue);
+}
+
+.bg-indigo {
+   background-color: var(--cyflex-indigo);
+}
+
+.bg-yellow {
+   background-color: var(--cyflex-yellow);
+}
+
+.bg-bright-yellow {
+   background-color: var(--cyflex-bright-yellow);
+}
+
+.bg-brown {
+   background-color: var(--cyflex-brown);
+}
+
+.bg-purple {
+   background-color: var(--cyflex-purple);
+}
+
+.bg-green {
+   background-color: var(--cyflex-green);
+}
+
+.bg-red {
+   background-color: var(--cyflex-red);
+}
+
+.bg-orange {
+   background-color: var(--cyflex-orange);
+}
+
+.bg-pink {
+   background-color: var(--cyflex-pink);
+}
+
+.order-1 {
+   order: 1;
+}
+
+.order-2 {
+   order: 2;
+}
+
+.order-3 {
+   order: 3;
+}
+
+.order-4 {
+   order: 4;
+}  
+
+.order-5 {
+   order: 5;
+}
+
+.order-6 {
+   order: 6;
+}
+
+.order-7 {
+   order: 7;
+}
+
+.order-8 {
+   order: 8;
+}
+
+.order-9 {
+   order: 9;
+}
+
+.order-10 {
+   order: 10;
+}
+
+.order-11 {
+   order: 11;
+}
+
+.order-12 {
+   order: 12;
+}
+
+.order-first {
+   order: -9999;
+}
+
+.order-last {
+   order: 9999;
+}
+
+.order-none {
+   order: 0;
+}
+
+/** Responsive Tablet*/
+@media screen and (min-width: 720px) {
+   
+}
+
 /** Cyflex — 21st Century of CSS Framework*/
