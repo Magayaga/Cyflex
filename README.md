@@ -20,4 +20,4 @@ Several quick start options are available:
 Our default branch is for development of our **Cyflex** release. For full documentation, visit <a href="https://magayaga.github.io/Cyflex">magayaga.github.io/Cyflex</a>
 
 ## Author
-Copyright 2022-2023 [Cyril John Magayaga](https://github.com/magayaga)
+Copyright 2022-2026 [Cyril John Magayaga](https://github.com/magayaga)
