@@ -13,11 +13,12 @@
 ## Quick start
 Several quick start options are available:
 
-* Original CDN: `https://magayaga.pages.dev/cdn/cyflex/@1.0.4/cyflex.css`
-* Clone the repo: `git clone https://github.com/magayaga/Cyflex.git`
+1. Original CDN: `https://magayaga.pages.dev/cdn/cyflex/@1.0.7/cyflex.css`
+
+2. Clone the repo: `git clone https://github.com/magayaga/Cyflex.git`
 
 ## Documentation
 Our default branch is for development of our **Cyflex** release. For full documentation, visit <a href="https://magayaga.github.io/Cyflex">magayaga.github.io/Cyflex</a>
 
-## Author
+## Copyright
 Copyright 2022-2026 [Cyril John Magayaga](https://github.com/magayaga)
